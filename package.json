@@ -1,0 +1,21 @@
+{
+  "name": "good-intent",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:web": "npm run dev --workspace web",
+    "dev:api": "npm run dev --workspace api",
+    "build": "npm run build --workspaces",
+    "test": "npm run test --workspaces --if-present",
+    "typecheck": "npm run build --workspace @good-intent/shared --workspace @good-intent/router-engine && npm run typecheck --workspaces --if-present",
+    "db:generate": "npm run db:generate --workspace api",
+    "db:migrate": "npm run db:migrate --workspace api",
+    "db:seed": "npm run db:seed --workspace api",
+    "db:reset-seed": "npm run db:reset-seed --workspace api",
+    "db:fresh-reset": "npm run db:fresh-reset --workspace api"
+  }
+}

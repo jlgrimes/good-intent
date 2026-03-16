@@ -1,0 +1,56 @@
+[
+  {
+    "id": "agent_ceo",
+    "name": "Avery",
+    "role": "ceo",
+    "title": "CEO",
+    "reportsTo": null,
+    "capabilities": ["strategy", "prioritization", "cross-functional coordination", "delegation"],
+    "status": "active"
+  },
+  {
+    "id": "agent_cto",
+    "name": "Mina",
+    "role": "cto",
+    "title": "CTO",
+    "reportsTo": "agent_ceo",
+    "capabilities": ["architecture", "infra", "deployment", "technical triage", "engineering leadership"],
+    "status": "active"
+  },
+  {
+    "id": "agent_infra",
+    "name": "Reed",
+    "role": "infra_engineer",
+    "title": "Infra Engineer",
+    "reportsTo": "agent_cto",
+    "capabilities": ["deployment", "ci/cd", "hosting", "observability", "docker", "dns", "ssl"],
+    "status": "active"
+  },
+  {
+    "id": "agent_product_eng",
+    "name": "Jules",
+    "role": "product_engineer",
+    "title": "Product Engineer",
+    "reportsTo": "agent_cto",
+    "capabilities": ["frontend", "backend", "auth", "oauth", "bug fixes", "react", "typescript", "api"],
+    "status": "active"
+  },
+  {
+    "id": "agent_designer",
+    "name": "Iris",
+    "role": "designer",
+    "title": "Designer",
+    "reportsTo": "agent_ceo",
+    "capabilities": ["design", "ux", "ui", "copy", "landing page", "brand", "hero messaging"],
+    "status": "active"
+  },
+  {
+    "id": "agent_growth",
+    "name": "Noah",
+    "role": "growth_lead",
+    "title": "Growth Lead",
+    "reportsTo": "agent_ceo",
+    "capabilities": ["growth", "activation", "onboarding", "conversion", "funnel", "experiments", "retention"],
+    "status": "active"
+  }
+]
